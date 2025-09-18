@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide 2 - Business Model Transformation</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background: white;
+overflow-x: hidden;
+}
+
+.container {
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+.slide {
+background: white;
+border-radius: 0;
+margin: 0;
+width: 100%;
+min-height: 100vh;
+overflow: hidden;
+box-shadow: none;
+border-bottom: 3px solid #e2e8f0;
+transform: translateY(20px);
+opacity: 0;
+animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+.slide-header {
+background: linear-gradient(135deg, #e53e3e 0%, #9f1239 100%);
+color: white;
+padding: 25px 40px;
+position: relative;
+overflow: hidden;
+}
+
+.slide-header::before {
+content: '';
+position: absolute;
+top: -50%;
+right: -20px;
+width: 100px;
+height: 200%;
+background: rgba(255, 255, 255, 0.1);
+transform: rotate(15deg);
+}
+
+.slide-number {
+font-size: 14px;
+opacity: 0.9;
+margin-bottom: 10px;
+font-weight: 600;
+}
+
+.slide-title {
+font-size: 28px;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 8px;
+}
+
+.slide-subtitle {
+font-size: 16px;
+opacity: 0.9;
+font-weight: 400;
+}
+
+.slide-content {
+padding: 40px;
+}
+
+.insight-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+margin-top: 30px;
+}
+
+.insight-card {
+background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+padding: 25px;
+border-radius: 15px;
+border-left: 5px solid #e53e3e;
+transition: transform 0.3s ease;
+}
+
+.insight-card:hover {
+transform: translateY(-5px);
+}
+
+.insight-title {
+font-size: 18px;
+font-weight: 700;
+color: #1a365d;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+}
+
+.insight-icon {
+width: 24px;
+height: 24px;
+margin-right: 10px;
+background: #e53e3e;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-weight: bold;
+}
+
+.insight-text {
+font-size: 14px;
+line-height: 1.6;
+color: #4a5568;
+}
+
+.highlight-box {
+background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+border: 2px solid #e53e3e;
+border-radius: 15px;
+padding: 25px;
+margin: 25px 0;
+position: relative;
+}
+
+.highlight-box::before {
+content: '★';
+position: absolute;
+top: -10px;
+left: 20px;
+background: #e53e3e;
+color: white;
+padding: 5px 12px;
+border-radius: 20px;
+font-size: 14px;
+}
+
+.strategy-list {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+margin-top: 20px;
+}
+
+.strategy-item {
+background: white;
+padding: 15px 20px;
+border-radius: 25px;
+border: 2px solid #e53e3e;
+color: #e53e3e;
+font-weight: 600;
+font-size: 14px;
+transition: all 0.3s ease;
+}
+
+.strategy-item:hover {
+background: #e53e3e;
+color: white;
+transform: scale(1.05);
+}
+
+.logo {
+position: fixed;
+top: 20px;
+right: 20px;
+background: white;
+padding: 10px 20px;
+border-radius: 25px;
+font-weight: 800;
+color: #e53e3e;
+font-size: 18px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+z-index: 1000;
+border: 2px solid #e53e3e;
+}
+
+@media (max-width: 768px) {
+.insight-grid {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.slide-title {
+font-size: 24px;
+}
+
+.slide-content {
+padding: 25px;
+}
+}
+</style>
+</head>
+<body>
+<div class="logo">meesho</div>
+
+<div class="container">
+<!-- Slide 2: Business Model Changes -->
+<div class="slide">
+<div class="slide-header">
+<div class="slide-number">SLIDE 2</div>
+<div class="slide-title">Business Model Transformation</div>
+<div class="slide-subtitle">Key changes required for rural market success</div>
+</div>
+<div class="slide-content">
+<div class="highlight-box" style="background: linear-gradient(135deg, #fef5e7 0%, #fed7aa 100%); border-color: #f59e0b;">
+    <h3 style="color: #92400e; font-size: 20px; margin-bottom: 15px;">🎭 INNOVATION: Hyperlocal Festival Commerce Engine</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;">
+        <div>
+            <p style="color: #78350f; margin-bottom: 15px;"><strong>"Festival Calendar Mapping"</strong> - AI-driven village-wise festival database with 2,000+ regional celebrations</p>
+            <ul style="color: #78350f; margin: 0; padding-left: 20px;">
+                <li>Real-time WhatsApp notifications 7-15 days before local festivals</li>
+                <li>Curated product bundles for specific rituals & traditions</li>
+                <li>Dynamic pricing with festival-specific discounts (15-30%)</li>
+                <li>Community-driven festival insights from local champions</li>
+            </ul>
+        </div>
+        <div style="text-align: center; background: white; padding: 20px; border-radius: 10px;">
+            <div style="font-size: 32px; font-weight: 800; color: #f59e0b;">2000+</div>
+            <div style="color: #92400e; font-weight: 600;">Regional Festivals Mapped</div>
+            <div style="margin-top: 10px; font-size: 14px; color: #78350f;">From Karva Chauth to Bisu Parba, Thrissur Pooram to Hornbill Festival</div>
+        </div>
+    </div>
+</div>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%); border-color: #3b82f6;">
+    <h3 style="color: #1e40af; font-size: 20px; margin-bottom: 15px;">🗣️ AI-POWERED LOCALIZATION ENGINE</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;">
+        <div>
+            <p style="color: #1e3a8a; margin-bottom: 15px;"><strong>"Apni Bhasha, Apna Bazaar"</strong> - Complete language transformation for cultural acceptance</p>
+            <ul style="color: #1e3a8a; margin: 0; padding-left: 20px;">
+                <li>Product names in local terms: "देसी साड़ी" not "Ethnic Saree"</li>
+                <li>Voice search in 12+ regional languages & dialects</li>
+                <li>Auto-translation of reviews to user's preferred language</li>
+                <li>Category names that resonate: "रसोई का सामान" vs "Kitchen Items"</li>
+            </ul>
+        </div>
+        <div style="text-align: center; background: white; padding: 20px; border-radius: 10px;">
+            <div style="font-size: 32px; font-weight: 800; color: #3b82f6;">12+</div>
+            <div style="color: #1e40af; font-weight: 600;">Regional Languages</div>
+            <div style="margin-top: 10px; font-size: 14px; color: #1e3a8a;">From Hindi dialects to Tamil, Telugu, Bengali - making products feel "hamara hai"</div>
+        </div>
+    </div>
+    <div style="margin-top: 20px; padding: 15px; background: rgba(59, 130, 246, 0.1); border-radius: 10px;">
+        <strong style="color: #1e40af;">Impact:</strong> 
+        <span style="color: #1e3a8a;">"Ethnic Kurta" → 15% click rate | "गांव वाला कुर्ता" → 65% click rate</span>
+    </div>
+</div>
+
+<div class="highlight-box" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-color: #16a34a; margin-top: 30px;">
+    <h3 style="color: #15803d; font-size: 20px; margin-bottom: 15px;">🏪 RURAL SELLER ECOSYSTEM: "Meesho Gaon Ki Dukaan"</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;">
+        <div>
+            <p style="color: #166534; margin-bottom: 15px;"><strong>"Village-to-Village Commerce Revolution"</strong> - Local sellers creating hyperlocal supply chains</p>
+            <ul style="color: #166534; margin: 0; padding-left: 20px;">
+                <li>Zero commission for rural sellers (first 2 years)</li>
+                <li>Mahila Mandal members become seller promoters</li>
+                <li>Cultural product synergy: Kanchipuram to Tamil villages</li>
+                <li>Government scheme integration (MUDRA, Stand Up India)</li>
+            </ul>
+        </div>
+        <div style="text-align: center; background: white; padding: 20px; border-radius: 10px;">
+            <div style="font-size: 32px; font-weight: 800; color: #16a34a;">₹0</div>
+            <div style="color: #15803d; font-weight: 600;">Commission for Rural Sellers</div>
+            <div style="margin-top: 10px; font-size: 14px; color: #166534;">vs 5-15% for urban sellers - true empowerment pricing</div>
+        </div>
+    </div>
+    <div style="margin-top: 20px; padding: 15px; background: rgba(22, 163, 74, 0.1); border-radius: 10px;">
+        <strong style="color: #15803d;">Seller Support:</strong> 
+        <span style="color: #166534;">Mobile Setup Vans + Government Scheme Assistance + Digital Training + SHG Integration</span>
+    </div>
+</div>
+
+<div style="grid-column: span 2;">
+    <h3 style="color: #1a365d; font-size: 20px; margin-bottom: 20px;">🛍️ Category Strategy: Culture-Driven Product Mix</h3>
+    <div class="strategy-list">
+        <div class="strategy-item">Festival-Specific Bundles</div>
+        <div class="strategy-item">Agricultural Tools & Seeds</div>
+        <div class="strategy-item">Traditional Wear & Sarees</div>
+        <div class="strategy-item">Regional Sweets & Prasadam</div>
+        <div class="strategy-item">Ritual Items & Decorations</div>
+        <div class="strategy-item">Basic Electronics (₹500-3000)</div>
+    </div>
+</div>
+
+<div class="insight-grid" style="margin-top: 30px;">
+    <div class="insight-card">
+        <div class="insight-title">
+            <div class="insight-icon">🚛</div>
+            Smart Fulfillment Revolution
+        </div>
+        <div class="insight-text">
+            • <strong>Data-Driven Meesho Points:</strong> Target villages 25+km from garment centers<br>
+            • Pre-stock high-demand items (sarees, kurtas, kids wear)<br>
+            • Hub & spoke model with district warehouses<br>
+            • Partnership with local kirana stores for last-mile
+        </div>
+    </div>
+    <div class="insight-card">
+        <div class="insight-title">
+            <div class="insight-icon">👥</div>
+            Rural Seller Incubation
+        </div>
+        <div class="insight-text">
+            • <strong>Government Schemes:</strong> MUDRA Yojana, PM SVANidhi, Startup India Rural<br>
+            • Mobile "Seller Setup Vans" visiting villages monthly<br>
+            • Women SHG collective selling partnerships<br>
+            • Seasonal agriculture integration programs
+        </div>
+    </div>
+    <div class="insight-card">
+        <div class="insight-title">
+            <div class="insight-icon">📱</div>
+            WhatsApp Festival Engine
+        </div>
+        <div class="insight-text">
+            • Village-specific festival calendar integration<br>
+            • Automated WhatsApp campaigns 7-15 days pre-festival<br>
+            • Local seller product promotions<br>
+            • Limited-time festival discounts (15-30% off)
+        </div>
+    </div>
+    <div class="insight-card">
+        <div class="insight-title">
+            <div class="insight-icon">💳</div>
+            Payment Innovation
+        </div>
+        <div class="insight-text">
+            • Voice-based payment instructions<br>
+            • QR code payments at collection points<br>
+            • Cash-on-delivery with digital incentives<br>
+            • Wallet top-up through local agents
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
